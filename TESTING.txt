@@ -1,0 +1,11 @@
+A.) Windows:
+1.) Open command prompt
+2.) Navigate to your PhoneGap application directory on local machine, use cd to change directory if needed
+3.) Invoke 'phonegap serve' in the cmd prompt on local PhoneGap application directory
+4.) Cmd prompt will display listening IP
+5.) Enter listening IP into PhoneGap mobile application for live testing of PhoneGap application
+
+B.) Mac:
+1.) Buy a windows PC
+2.) Goto part A
+3.) You never should really hit step B3
