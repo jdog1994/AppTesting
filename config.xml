@@ -1,0 +1,11 @@
+<widget id="com.example.hello" version="0.0.1">
+    <name>HelloWorld</name>
+    <description>
+        A sample Apache Cordova application.
+    </description>
+    <author>
+        Jonny Forney
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+</widget>
