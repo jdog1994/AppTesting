@@ -15,7 +15,6 @@
 
 
 
-    <gap:plugin name="org.apache.cordova.geolocation" />
 
 
     <access origin="*"/>
