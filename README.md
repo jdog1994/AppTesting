@@ -1,5 +1,7 @@
 # PhoneGap Application Testing
 
 Authors: 
-  Jonny Forney
-  Tyler Dorn
+  <ul>
+  	<li>Jonny Forney</li>
+  	<li>Tyler Dorn</li>
+  </ul>
