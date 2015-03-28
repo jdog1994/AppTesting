@@ -1,3 +1,5 @@
 # PhoneGap Application Testing
 
-We go hard
+Authors: 
+  Jonny Forney
+  Tyler Dorn
