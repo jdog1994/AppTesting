@@ -1,11 +1,27 @@
 /* Global tags */
 body {
-    background-color: yellow;
+    background-color: lightgray;
+}
+
+ul {
+	list-style: none;
+	padding: 0px;
 }
 
 /* class */
-.center {
+.main-center {
+	vertical-align: middle;
+	margin-top: 25%;
     text-align: center;
 }
 
+.center {
+	text-align: center;
+}
+
+.footer {
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+}
 /* ids */
