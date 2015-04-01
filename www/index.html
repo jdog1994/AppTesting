@@ -22,10 +22,15 @@
         <div data-role="page" id="home" data-theme="b">
             <div data-role="header">
                 <h1>Home</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#home" data-transition="flip" data-icon="grid">Home</a></li>
+                        <li><a href="#about" data-transition="flip" data-icon="grid">About</a></li>
+                    </ul>
+                </div>
             </div>
             <div data-role="main" class="ui-content main-center">
                 <h1>Hello World!</h1>
-                <a href="#about" data-transition="flip">About</a>
             </div>
             <div data-role="footer" class="footer">
                 <h2>&copy; Jonny Forney 2015</h2>
@@ -35,6 +40,12 @@
         <div data-role="page" id="about" data-theme="b">
             <div data-role="header">
                 <h1>About</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#home" data-transition="flip" data-icon="grid">Home</a></li>
+                        <li><a href="#about" data-transition="flip" data-icon="grid">About</a></li>
+                    </ul>
+                </div>                
             </div>
             <div data-role="main" class="ui-content main-center">
                 <h1>Authors</h1>
@@ -42,7 +53,6 @@
                     <li>Jonny Forney</li>
                     <li>Tyler Dorn</li>
                 </ul>   
-                <a href="#home" data-transition="flip">Home</a>
             </div>
             <div data-role="footer" class="footer">
                 <h2>&copy; Jonny Forney 2015</h2>
