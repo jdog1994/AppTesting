@@ -19,6 +19,42 @@ ul {
 	text-align: center;
 }
 
+.link-plain {
+	text-decoration: none;
+	color: inherit;
+}
+
+li.top-menu {
+	display: inline;
+	list-style-type: none;
+}
+
+.top-right {
+	float: right;
+	padding-right: 5%;
+}
+
+.top-middle {
+	text-align: center;
+}
+
+.top-left {
+	float: left;
+	padding-left: 5%;
+}
+
+.top-menu-button {
+	font-size: 12px;
+}
+
+.facebook {
+	text-align: center;
+	font-weight: bold;
+	background-color: #3B5998;
+	border-radius: 5px;
+	padding: 5px;
+}
+
 .footer {
 	position: absolute;
 	width: 100%;
