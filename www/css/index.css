@@ -51,8 +51,14 @@ li.top-menu {
 	text-align: center;
 	font-weight: bold;
 	background-color: #3B5998;
+	font-size: 12px;
 	border-radius: 5px;
-	padding: 5px;
+	padding: 10px;
+}
+
+.icon {
+	height: 15px;
+	width: 15px;
 }
 
 .footer {

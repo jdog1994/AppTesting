@@ -24,40 +24,93 @@
                 <h1>Home</h1>
             </div>
             <div data-role="main" class="ui-content">
-                <div class="main-center">
-                    <h1>Hello World!</h1>
-                </div>
-              
+                <div class="main-center"></div>              
             </div>
             <div data-role="footer" class="footer">
                 <div data-role="navbar">
                     <ul>
-                        <li><a href="#home" data-transition="flip" data-icon="grid">Sign In</a></li>
+                        <li><a href="#signin" data-transition="flip" data-icon="grid">Sign In</a></li>
                         <li><a href="#register" data-transition="flip" data-icon="grid">Register</a></li>
                     </ul>
                 </div>            
             </div>        
         </div>
 
-        <div data-role="page" id="register" data-theme="b">
+        <div data-role="page" id="signin" data-theme="b">
             <div data-role="header">
                 <ul align="center">
-                    <li class="top-menu top-left"><a href="#home" class="link-plain top-menu-button"><i>Cancel</i></a></li>
-                    <li class="top-menu"><span>CREATE AN ACCOUNT</span></li>
-                    <li class="top-menu top-right"><a href="#cc" class="link-plain top-menu-button"><i>Next</i></a></li>
+                    <li class="top-menu top-left"><a href="#home" class="link-plain top-menu-button"><i>CANCEL</i></a></li>
+                    <li class="top-menu"><span>SIGN IN</span></li>
+                    <li class="top-menu top-right"><a href="#home" class="link-plain top-menu-button"><i>DONE</i></a></li>
                 </ul>              
             </div>
             <div data-role="main" class="ui-content">
-                <div class="facebook">Faceboook</div>
+                <div class="facebook">
+                    <img src="img/facebook.png" class="icon" style="float: left;"/> 
+                    <span style="margin-right: 18px;">CONNECT WITH FACEBOOK</span>
+                </div>
                 <div class="center" style="padding: 5px;">or</div>
-                <form>
-                <input type="email" id="email" placeholder="Email" />
-                <input type="text" id="mobile" placeholder="mobile" />
-                <input type="password" id="password" placeholder="Password (min 5)" />
+                <form align="center">
+                    <input type="email" id="email" placeholder="Email" />
+                    <input type="password" id="password" />
+                    <a href="">FORGOT PASSWORD?</a>
                 </form>  
             </div>
-            <div data-role="footer" class="footer">
-                <h2>&copy; Jonny Forney 2015</h2>
+        </div>
+
+        <div data-role="page" id="register" data-theme="b">
+            <div data-role="header">
+                <ul align="center">
+                    <li class="top-menu top-left"><a href="#home" class="link-plain top-menu-button"><i>CANCEL</i></a></li>
+                    <li class="top-menu"><span>CREATE AN ACCOUNT</span></li>
+                    <li class="top-menu top-right"><a href="#create" class="link-plain top-menu-button"><i>NEXT</i></a></li>
+                </ul>              
+            </div>
+            <div data-role="main" class="ui-content">
+                <div class="facebook">
+                    <img src="img/facebook.png" class="icon" style="float: left;"/> 
+                    <span style="margin-right: 18px;">CONNECT WITH FACEBOOK</span>
+                </div>
+                <div class="center" style="padding: 5px;">or</div>
+                <form align="center">
+                    <input type="email" id="email" placeholder="Email" />
+                    <input type="text" id="mobile" placeholder="Mobile" />
+                    <input type="password" id="password" placeholder="Password (min 5)" />
+                    <span style="font-size: 10px; text-align: center;">We use your email and mobile number to send you shipping confirmations and receipts</span>
+                </form>  
+            </div>
+        </div>
+
+        <div data-role="page" id="create" data-theme="b">
+            <div data-role="header" align="center">
+                <ul align="center">
+                    <li class="top-menu top-left"><a href="#register" class="link-plain top-menu-button"><i>BACK</i></a></li>
+                    <li class="top-menu"><span>CREATE A PROFILE</span></li>
+                    <li class="top-menu top-right"><a href="#payment" class="link-plain top-menu-button"><i>NEXT</i></a></li>
+                </ul>              
+            </div>
+            <div data-role="main" class="ui-content">
+                <form align="center">
+                    <input type="email" id="email" placeholder="Email" />
+                    <input type="text" id="mobile" placeholder="Mobile" />
+                    <input type="password" id="password" placeholder="Password (min 5)" />
+                    <span style="font-size: 10px; text-align: center;">We use your email and mobile number to send you shipping confirmations and receipts</span>
+                </form>  
+            </div>
+        </div>
+
+        <div data-role="page" id="payment" data-theme="b">
+            <div data-role="header">
+                <ul align="center">
+                    <li class="top-menu top-left"><a href="#create" class="link-plain top-menu-button"><i>BACK</i></a></li>
+                    <li class="top-menu"><span>LINK PAYMENT</span></li>
+                    <li class="top-menu top-right"><a href="#home" class="link-plain top-menu-button"><i>DONE</i></a></li>
+                </ul>              
+            </div>
+            <div data-role="main" class="ui-content">
+                <form align="center">
+              
+                </form>  
             </div>
         </div>
 
