@@ -59,6 +59,7 @@
 			<li> you’ll be running NodeJS on the server, with MongoDB as a database also on the server, and standard HTML+JS on the client. You can get the two talking “live” (without refreshing) with Websockets or SocketIO. Any reason you’re using Windows Server specifically?</li>
 			<li >as to deploy... if you're doing web, I'd use ARR (Application Request Routing) in IIS pointing to your node app... as for the node app/service, use NSSM (Non-Sucking Service Manager) to install your node service, I usually use a .cmd for the service) ...  If you have Linux, then node is far easier to version/target against with docker imho</li>
 			<li >it will be a lot easier and less pricey to get a VPS on something like Linode or DigitalOcean, and work with Node on Linux. I’m trying to find a good tutorial on Websockets you can check out, but lots of these are out of date.</li>
+			<li> Window server: http://www.hanselman.com/blog/InstallingAndRunningNodejsApplicationsWithinIISOnWindowsAreYouMad.aspx</li>
 			</li>
 		</ul>
 </ul>
