@@ -64,6 +64,8 @@
 			<li> rest api: https://www.npmjs.com/package/mongodb-rest</li>
 		</ul>
 	<li><b>Plugins </b>
-	http://blog.revivalx.com/2014/07/12/upload-image-using-file-transfer-cordova-plugin-for-ios-and-android/
+		<ul>
+			<li>http://blog.revivalx.com/2014/07/12/upload-image-using-file-transfer-cordova-plugin-for-ios-and-android/</li>
+		</ul>
 	</li>
 </ul>
