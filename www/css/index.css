@@ -56,9 +56,14 @@ li.top-menu {
 	padding: 10px;
 }
 
-.icon {
+.icon-small {
 	height: 15px;
 	width: 15px;
+}
+
+.icon-medium {
+	height: 15%;
+	width: 25%;
 }
 
 .footer {
