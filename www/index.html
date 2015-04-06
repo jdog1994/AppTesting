@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="msapplication-tap-highlight" content="no" />
-        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <title>Testing</title>
-        <!-- js scripts-->
-        <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
-        <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
-        <script type="text/javascript" src="js/scripts.js"></script>
-        <!-- css links -->
-        <link rel="stylesheet" href="css/themes/my-custom-theme.css" />
-        <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />        
-        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
-        <link rel="stylesheet" href="css/index.css" />        
+   <meta charset="utf-8" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="msapplication-tap-highlight" content="no" />
+<!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+<title>Mobile App</title>
+<!-- js scripts-->
+<script type="text/javascript" src="phonegap.js"></script>
+<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+<!-- css links -->
+<link rel="stylesheet" href="css/themes/my-custom-theme.css" />
+<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />        
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+<link rel="stylesheet" href="css/index.css" />  
     </head>
     <body>
         <div data-role="page" id="home" data-theme="b">
@@ -51,9 +51,9 @@
                 </div>
                 <div class="center" style="padding: 5px;">or</div>
                 <form align="center">
-                    <input type="email" id="email" placeholder="Email" />
-                    <input type="password" id="password" />
-                    <a href="">FORGOT PASSWORD?</a>
+                    <input type="email" id="email" name="email" placeholder="Email" />
+                    <input type="password" id="password" name="password" placeholder="Password" />
+                    <a href="" style="font-size: 14px;">FORGOT PASSWORD?</a>
                 </form>  
             </div>
         </div>
@@ -72,17 +72,37 @@
                     <span style="margin-right: 18px;">CONNECT WITH FACEBOOK</span>
                 </div>
                 <div class="center" style="padding: 5px;">or</div>
-                <form align="center">
-                    <ul>
-                    <li style="">
-                        <label for="email" style="float: left;">Email</label>
-                        <input type="email" id="email" placeholder="name@example.com" />
-                    </li>
-                        <input type="text" id="mobile" placeholder="Mobile" />
-                        <input type="password" id="password" placeholder="Password (min 5)" />
-                    </ul>
-                    <span style="font-size: 10px; text-align: center;">We use your email and mobile number to send you shipping confirmations and receipts</span>
-                </form>  
+                <form method="POST" align="center">
+                    <table align="center">
+                        <tr>
+                            <td>
+                                <label for="email">Email</label>
+                            </td>
+                            <td>
+                                <input type="email" id="email" placeholder="name@example.com" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="mobile" style="">Mobile</label>
+                            </td>
+                            <td>
+                                <input type="text" id="mobile" placeholder="Mobile" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>                   
+                                <label for="password" style="">Password</label>
+                            </td>
+                            <td>
+                                <input type="password" id="password" placeholder="min 5 characters" />
+                            </td>
+                        </tr>
+                    </table>
+                    <span style="font-size: 10px; text-align: center;">
+                        We use your email and mobile number to send you shipping confirmations and receipts
+                    </span>                     
+                </form>                 
             </div>
         </div>
 
@@ -121,6 +141,9 @@
                     <input type="text" placeholder="Credit Card" />
                 </form>  
             </div>
-        </div>      
+        </div> 
+        <script type="text/javascript">
+             //$("head").load("header.html");
+        </script>     
     </body>
 </html>

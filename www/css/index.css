@@ -8,6 +8,11 @@ ul {
 	padding: 0px;
 }
 
+label {
+	text-align: right;
+	margin: 0px !important;
+}
+
 /* class */
 .main-center {
 	vertical-align: middle;
