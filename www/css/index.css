@@ -47,6 +47,10 @@ li.top-menu {
 	font-size: 12px;
 }
 
+.clearfix {
+	overflow: auto;
+}
+
 .facebook {
 	text-align: center;
 	font-weight: bold;
@@ -62,8 +66,17 @@ li.top-menu {
 }
 
 .icon-medium {
-	height: 15%;
+	height: 70px;
 	width: 25%;
+}
+
+.edit-pic {
+	position: absolute; 
+	margin-left: 7.5%; 
+	margin-top: 21%; 
+	font-size: 12px; 
+	color: #B0C4DE; 
+	text-shadow: none;
 }
 
 .footer {

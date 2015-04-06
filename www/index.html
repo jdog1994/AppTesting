@@ -73,9 +73,14 @@
                 </div>
                 <div class="center" style="padding: 5px;">or</div>
                 <form align="center">
-                    <input type="email" id="email" placeholder="Email" />
-                    <input type="text" id="mobile" placeholder="Mobile" />
-                    <input type="password" id="password" placeholder="Password (min 5)" />
+                    <ul>
+                    <li style="">
+                        <label for="email" style="float: left;">Email</label>
+                        <input type="email" id="email" placeholder="name@example.com" />
+                    </li>
+                        <input type="text" id="mobile" placeholder="Mobile" />
+                        <input type="password" id="password" placeholder="Password (min 5)" />
+                    </ul>
                     <span style="font-size: 10px; text-align: center;">We use your email and mobile number to send you shipping confirmations and receipts</span>
                 </form>  
             </div>
@@ -90,11 +95,12 @@
                 </ul>              
             </div>
             <div data-role="main" class="ui-content">
-                <form align="center">
-                    <div style="overflow: auto;">
-                        <img src="img/profile_icon.png" class="icon-medium" style="float: left;"/>
-                    </div>
-                    <div style="">
+                <form method="POST" style="width:100%; display: inline;">
+                    <a href="#home">
+                        <span class="edit-pic">Edit</span>                    
+                        <img src="img/profile_icon.png" class="icon-medium" style="margin-top: 5%;"/>
+                    </a>
+                    <div style="float: right; width: 70%;">
                         <input type="text" id="first" placeholder="First" />
                         <input type="text" id="last" placeholder="Last" />    
                     </div>                
@@ -112,31 +118,9 @@
             </div>
             <div data-role="main" class="ui-content">
                 <form align="center">
-                
+                    <input type="text" placeholder="Credit Card" />
                 </form>  
             </div>
-        </div>
-
-        <div data-role="page" id="about" data-theme="b">
-            <div data-role="header">
-                <h1>About</h1>
-                <div data-role="navbar">
-                    <ul>
-                        <li><a href="#home" data-transition="flip" data-icon="grid">Home</a></li>
-                        <li><a href="#about" data-transition="flip" data-icon="grid">About</a></li>
-                    </ul>
-                </div>                
-            </div>
-            <div data-role="main" class="ui-content main-center">
-                <h1>Authors</h1>
-                <ul class="center">
-                    <li>Jonny Forney</li>
-                    <li>Tyler Dorn</li>
-                </ul>   
-            </div>
-            <div data-role="footer" class="footer">
-                <h2>&copy; Jonny Forney 2015</h2>
-            </div>
-        </div>       
+        </div>      
     </body>
 </html>
