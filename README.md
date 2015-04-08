@@ -50,6 +50,7 @@
 		<ul>
 			<li> http://adrianmejia.com/blog/2014/10/01/creating-a-restful-api-tutorial-with-nodejs-and-mongodb </li>
 			<li> https://github.com/ccoenraets/PictureFeed -Mobile Client Node to Server Node</li> 
+			<li> http://codetheory.in/using-the-node-js-bcrypt-module-to-hash-and-safely-store-passwords/</li>
 		</ul>
 	</li>
 	<li><b>The Grand Question</b></li>
