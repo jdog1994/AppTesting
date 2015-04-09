@@ -22,150 +22,22 @@
             </div>        
         </div>
 
-        <div data-role="page" id="signin" data-theme="b">
-            <div data-role="header">
-                <ul align="center">
-                    <li class="top-menu top-left"><a href="#home" class="link-plain top-menu-button"><i>CANCEL</i></a></li>
-                    <li class="top-menu"><span>SIGN IN</span></li>
-                    <li class="top-menu top-right"><a href="#home" class="link-plain top-menu-button"><i>DONE</i></a></li>
-                </ul>              
-            </div>
-            <div data-role="main" class="ui-content">
-                <div class="facebook">
-                    <img src="img/facebook.png" class="icon-small" style="float: left;"/> 
-                    <span style="margin-right: 18px;">CONNECT WITH FACEBOOK</span>
-                </div>
-                <div class="center" style="padding: 5px;">or</div>
-                <form align="center">
-                    <table align="center">
-                        <tr>
-                            <td>
-                                <label for="email">Email</label>
-                            </td>
-                            <td>
-                                <input type="email" id="email" name="email" placeholder="name@example.com" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>                   
-                                <label for="password" style="">Password</label>
-                            </td>
-                            <td>
-                                <input type="password" id="password" name="password" />
-                            </td>
-                        </tr>
-                    </table>                
-                    <a href="" style="font-size: 12px; text-decoration: none;">FORGOT PASSWORD?</a>
-                </form>  
-            </div>
-        </div>
-
-        <div data-role="page" id="register" data-theme="b">
-            <div data-role="header">
-                <ul align="center">
-                    <li class="top-menu top-left"><a href="#home" class="link-plain top-menu-button"><i>CANCEL</i></a></li>
-                    <li class="top-menu"><span>CREATE AN ACCOUNT</span></li>
-                    <li class="top-menu top-right"><a href="#create" class="link-plain top-menu-button"><i>NEXT</i></a></li>
-                </ul>              
-            </div>
-            <div data-role="main" class="ui-content">
-                <div class="facebook">
-                    <img src="img/facebook.png" class="icon-small" style="float: left;"/> 
-                    <span style="margin-right: 18px;">CONNECT WITH FACEBOOK</span>
-                </div>
-                <div class="center" style="padding: 5px;">or</div>
-                <form method="POST" align="center">
-                    <table align="center">
-                        <tr>
-                            <td>
-                                <label for="email">Email</label>
-                            </td>
-                            <td>
-                                <input type="email" id="email" name="email" placeholder="name@example.com" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="mobile" style="">Mobile</label>
-                            </td>
-                            <td>
-                                <input type="text" id="mobile" name="mobile" placeholder="" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>                   
-                                <label for="password" style="">Password</label>
-                            </td>
-                            <td>
-                                <input type="password" id="password" name="password" placeholder="Min 5 characters" />
-                            </td>
-                        </tr>
-                    </table>
-                    <span style="font-size: 10px; text-align: center;">
-                        We use your email and mobile number to send you shipping confirmations and receipts
-                    </span>                     
-                </form>                 
-            </div>
-        </div>
-
-        <div data-role="page" id="create" data-theme="b">
-            <div data-role="header" align="center">
-                <ul align="center">
-                    <li class="top-menu top-left">
-                        <a href="#register" class="link-plain top-menu-button">
-                            <i>BACK</i>
-                        </a>
-                    </li>
-                    <li class="top-menu">
-                        <span>CREATE A PROFILE</span>
-                    </li>
-                    <li class="top-menu top-right">
-                        <a href="#payment" class="link-plain top-menu-button">
-                            <i>NEXT</i>
-                        </a>
-                    </li>
-                </ul>              
-            </div>
-            <div data-role="main" class="ui-content">
-                <form method="POST" style="width:100%; display: inline;">
-                    <a href="#home">
-                        <span class="edit-pic">Edit</span>                    
-                        <img src="img/profile_icon.png" class="icon-medium" style="margin-top: 5%;"/>
-                    </a>
-                    <div style="float: right; width: 70%;">
-                        <input type="text" id="first" placeholder="First" />
-                        <input type="text" id="last" placeholder="Last" />    
-                    </div>                
-                </form>  
-            </div>
-        </div>
-
-        <div data-role="page" id="payment" data-theme="b">
-            <div data-role="header">
-                <ul align="center">
-                    <li class="top-menu top-left">
-                        <a href="#create" class="link-plain top-menu-button">
-                            <i>BACK</i>
-                        </a>
-                    </li>
-                    <li class="top-menu">
-                        <span>LINK PAYMENT</span>
-                    </li>
-                    <li class="top-menu top-right">
-                        <a href="#home" class="link-plain top-menu-button">
-                            <i>DONE</i>
-                        </a>
-                    </li>
-                </ul>              
-            </div>
-            <div data-role="main" class="ui-content">
-                <form align="center">
-                    <input type="text" placeholder="1234 5678 9012 3456" />
-                </form>  
-            </div>
-        </div>
         <script>
-            // load include pages
+            // load pages
+            var pages = ['pages/register.html', 'pages/signin.html'],
+                $main = $('body'),
+                doLoad = function () {
+                    if(pages.length > 0) {
+                      // use shift to get the next page off the array
+                      $.get(pages.shift(), function(content) {                          
+                          $main.append(content);    // append content to body
+                          doLoad();     // call do load to get the next entry                          
+                      });
+                    }
+                };
+            doLoad();            
+        
+            // load include pages   
             $("head").load("inc/header.html");
         </script>     
     </body>
