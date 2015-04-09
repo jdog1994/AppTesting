@@ -62,7 +62,7 @@
 			<li >it will be a lot easier and less pricey to get a VPS on something like Linode or DigitalOcean, and work with Node on Linux. I’m trying to find a good tutorial on Websockets you can check out, but lots of these are out of date.</li>
 			<li> Window server: http://www.hanselman.com/blog/InstallingAndRunningNodejsApplicationsWithinIISOnWindowsAreYouMad.aspx</li>
 			</li>
-			<li> rest api: https://www.npmjs.com/package/mongodb-rest</li>
+			<li> https://github.com/Cordazar/crest</li>
 		</ul>
 	<li><b>Plugins </b>
 		<ul>
