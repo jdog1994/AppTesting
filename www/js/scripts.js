@@ -16,10 +16,31 @@ function login() {
 	event.preventDefault();
 	var user = $('#email_main').val();
 	var password = $('#password_main').val();
-	alert(user);
-	$('#email_main').blur();
-	$('#password_main').blur();
+
+	if(user != '') {
+		if(password != '') {
+			$.mobile.changePage("#main");
+			$('#email_main').blur();
+			$('#password_main').blur();	
+		} else {
+			alert('Enter Valid Password');
+		}
+	} else {
+		alert('Enter Valid Username');
+	}
+
 	return false;
+}
+
+
+
+function loginFacebook() {
+	facebookConnectPlugin.login(["public_profile"],
+	    function (userData) {
+    alert("UserInfo: " + JSON.stringify(userData));
+},
+	    function (error) { alert(error) }
+	);
 }
 
 function CancelRegistration(){

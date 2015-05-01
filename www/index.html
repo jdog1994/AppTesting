@@ -5,26 +5,23 @@
     </head>
 
     <body>
-        <div data-role="page" id="home" data-theme="b">
-            <div data-role="header">
-                <h1>Home</h1>
-            </div>
+        <div data-role="page" id="home" style="background-color: white;">            
             <div data-role="main" class="ui-content">
-                <div class="main-center"></div>              
+                <div class="main-center">
+                    <img src="img/logo.png" />
+                </div>              
             </div>
-            <div data-role="footer" class="footer">
-                <div data-role="navbar">
-                    <ul>
-                        <li><a href="#signin" data-transition="flip" data-icon="grid">Sign In</a></li>
-                        <li><a href="#register" data-transition="flip" data-icon="grid">Register</a></li>
-                    </ul>
-                </div>            
+            <div class="footer" style="background-color: white;">                
+                <ul>
+                    <li><a href="#signin" class="nav_button nav_left" data-role="none">SIGN IN</a></li>
+                    <li><a href="#register" class="nav_button nav_right" data-role="none">REGISTER</a></li>
+                </ul>                
             </div>        
         </div>
 
         <script>
             // load pages
-            var pages = ['pages/register.html', 'pages/signin.html'],
+            var pages = ['pages/register.html', 'pages/signin.html', 'pages/main.html'],
                 $main = $('body'),
                 doLoad = function () {
                     if(pages.length > 0) {

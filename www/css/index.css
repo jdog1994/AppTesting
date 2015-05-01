@@ -91,6 +91,38 @@ li.top-menu {
 .footer {
 	position: absolute;
 	width: 100%;
-	bottom: 0px;
+	bottom: 4%;
 }
+
+.footer ul li {
+	display: inline;
+}
+
+.nav_button {	
+	width: 45%;
+	padding: 3% 0 3% 0;
+	border-radius: 5px;
+	font-family: New Times Roman;
+	font-size: 12px;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: none;	
+}
+
+.nav_left {
+	margin-left: 4%;
+	color: black !important;
+	background-color: lightgray;
+	float: left;
+}
+
+.nav_right {
+	margin-right: 4%;
+	color: white !important;
+	background-color: #0c65a5;
+	float: right;
+}
+
+
+
 /* ids */
