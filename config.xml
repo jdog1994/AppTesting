@@ -49,7 +49,7 @@
 
     <gap:plugin name="org.apache.cordova.geolocation" />
     <gap:plugin name="org.apache.cordova.statusbar" />
-
+    <gap:plugin name="com.testflightapp.cordova-plugin" version="2.0.0" />
     <!-- Define app icon for each platform. -->
     <icon src="icon.png" />
     <icon src="res/icon/android/icon-36-ldpi.png"   gap:platform="android"    gap:qualifier="ldpi" />
