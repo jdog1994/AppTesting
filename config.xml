@@ -49,7 +49,6 @@
 
     <gap:plugin name="org.apache.cordova.geolocation" />
     <gap:plugin name="org.apache.cordova.statusbar" />
-    <gap:plugin name="com.testflightapp.cordova-plugin" version="2.0.0" />
     <!-- Define app icon for each platform. -->
     <icon src="icon.png" />
     <icon src="res/icon/android/icon-36-ldpi.png"   gap:platform="android"    gap:qualifier="ldpi" />
@@ -78,10 +77,8 @@
     <gap:splash src="res/screen/ios/screen-ipad-portrait.png"           gap:platform="ios"     width="768" height="1024" />
     <gap:splash src="res/screen/ios/screen-ipad-landscape.png"          gap:platform="ios"     width="1024" height="768" />
     <gap:splash src="res/screen/windows-phone/screen-portrait.jpg"      gap:platform="winphone" />
-    <gap:plugin name="com.phonegap.plugins.facebookconnect" version="<2.3>">
-        <param name="APP_ID" value="<1592242387728507>" />
-        <param name="APP_NAME" value="<Rapido>" />
-    </gap:plugin>
+    <gap:plugin name="com.testflightapp.cordova-plugin" version="2.0.0" />
+
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
     <string>100</string>
     </gap:config-file>
